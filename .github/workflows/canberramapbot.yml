@@ -2,7 +2,7 @@ name: canberramapbot
 
 on:
   schedule:
-    - cron: '0-59/20 * * * *'  # every 20 min
+    - cron: '0,30 * * * *'  # twice an hour
 
 jobs:
   canberramapbot-post:
