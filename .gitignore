@@ -70,3 +70,6 @@ vignettes/*.pdf
 ### R.Bookdown Stack ###
 # R package: bookdown caching files
 /*_files/
+
+# file that keeps secrets ;)
+local-secrets.R
