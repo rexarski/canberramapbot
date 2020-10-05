@@ -5,7 +5,7 @@ on:
     - cron: '0-59/20 * * * *'  # every 20 min
 
 jobs:
-  londonmapbot-post:
+  canberramapbot-post:
     runs-on: macOS-latest
     env:
       TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
