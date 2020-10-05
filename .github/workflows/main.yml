@@ -2,7 +2,7 @@ name: canberramapbot
 
 on:
   schedule:
-    - cron: '0-59/15 * * * *'
+    - cron: '0-59/20 * * * *'
 
 jobs:
   londonmapbot-post:
