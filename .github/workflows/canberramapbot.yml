@@ -2,7 +2,7 @@ name: canberramapbot
 
 on:
   schedule:
-    - cron: '0 0-24/8 * * *'  # three times a day considering the limit of runner minutes per month
+    - cron: '0 0-23/6 * * *'  # three times a day considering the limit of runner minutes per month
 
 jobs:
   canberramapbot-post:
