@@ -2,7 +2,7 @@ name: canberramapbot
 
 on:
   schedule:
-    - cron: '0 0-23/6 * * *'  # three times a day considering the limit of runner minutes per month
+    - cron: '0,30 * * * *'  # three times a day considering the limit of runner minutes per month
 
 jobs:
   canberramapbot-post:
@@ -14,8 +14,8 @@ jobs:
       TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
       MAPBOX_PUBLIC_ACCESS_TOKEN: ${{ secrets.MAPBOX_PUBLIC_ACCESS_TOKEN }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@master
+#       - uses: actions/checkout@v2
+#       - uses: r-lib/actions/setup-r@master
       - name: Install rtweet package
         run: Rscript -e 'install.packages("rtweet", dependencies = TRUE)'
       - name: Create and post tweet
