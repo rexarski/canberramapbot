@@ -20,7 +20,7 @@ temp_file <- tempfile()
 # download.file(img_url, temp_file)
 
 # use httr to download
-httr::GET(img_url, write_disk(temp_file, overwrite = TRUE))
+httr::GET(img_url, httr::write_disk(temp_file, overwrite = TRUE))
 
 rtweet::post_tweet(
   status = paste0("https://www.openstreetmap.org/#map=17/", lat, "/", lon, "/"),
