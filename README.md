@@ -6,6 +6,8 @@ Randomly post bird's-eye views over Canberra (roughly a rectangle) at a random s
 
 A clone from Matt Dray's [londonmapbot](https://github.com/matt-dray/londonmapbot). Twitter: [@londonmapbot](https://twitter.com/londonmapbot)
 
+![img](temp.jpg)
+
 ## Procedure
 
 ```
