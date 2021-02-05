@@ -2,7 +2,7 @@ name: canberramapbot
 
 on:
   schedule:
-    - cron: '0,30 * * * *'
+    - cron: '1 8-23/6 * * *'
 
 jobs:
   canberramapbot-post:
